@@ -51,6 +51,13 @@ function Root({children}) {
                                    "to": "/cv"
                                },
                                "isActive": location.pathname === "/cv"
+                           },
+                           {
+                               "text": "Notes",
+                               "linkProps": {
+                                   "to": "/notes"
+                               },
+                               "isActive": location.pathname === "/notes"
                            }
                        ]}
                    />

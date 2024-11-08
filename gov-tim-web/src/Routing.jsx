@@ -3,6 +3,8 @@ import Root from './Root'
 import Home from './Home'
 import Error404 from './Error404'
 import CV from './CV'
+import Notes from './Notes'
+import ExportCanvas from './ExportCanvas'
 
 const router = createBrowserRouter([
     {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
             {
                 path: '/cv',
                 element: <CV />
+            },
+            {
+                path: '/notes',
+                element: <Notes />
+            },
+            {
+                path:'/export_image',
+                element: <ExportCanvas />
             },
             {
                 path: '*',
