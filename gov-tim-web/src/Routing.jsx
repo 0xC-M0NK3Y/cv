@@ -1,6 +1,7 @@
 import {RouterProvider, Outlet, createBrowserRouter} from "react-router-dom"
 import Root from './Root'
 import Home from './Home'
+import Error404 from './Error404'
 import CV from './CV'
 
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
             {
                 path: '/cv',
                 element: <CV />
+            },
+            {
+                path: '*',
+                element: <Error404 />
             }
      	]
     }
